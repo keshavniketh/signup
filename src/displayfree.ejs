@@ -1,0 +1,123 @@
+
+<table class="table table-striped table-primary" style="width:100%;background-color:powderblue;">
+    <style> 
+      table, th, td { 
+          border: 1px solid black; 
+      } 
+  </style> 
+  
+   <center>   <h1>Roomwise Time Table</h1></center> 
+   <br/>
+  
+   <h3>YEAR: <%= year %></h3> 
+   
+   <thead>
+        <tr>
+          <!-- <th><h2>sem</h2></th><th></th>
+          <th><h2>year</h2></th><th></th>
+          <th><h2>section</h2></th><th></th> -->
+          <th  style="background-color:yellow;"><h2>Day</h2></th><th></th>
+          <th  style="background-color:yellow;"><h2>Room NO</h2></th><th></th>
+          <th  style="background-color:yellow;"><h2>period1</h2><h2>8:40 - 9:30</h2></th><th></th>
+          <th  style="background-color:yellow;"><h2>period2</h2><h2>9:30 - 10:20</h2></th><th></th>
+          <th  style="background-color:yellow;"><h2>period3</h2><h2>10:20 - 11:10</h2></th><th></th>
+          <th  style="background-color:yellow;"><h2>period4</h2><h2>11:20 - 12:10</h2></th><th></th>
+          <th  style="background-color:yellow;"><h2>period5</h2><h2>12:10 - 1:00</h2></th><th></th>
+          <th  style="background-color:yellow;"><h2>period6</h2><h2>1:00 - 2:00</h2></th><th></th>
+          <th  style="background-color:yellow;"><h2>period7</h2><h2>2:00 - 2:50</h2></th><th></th>
+          <th  style="background-color:yellow;"><h2>period8</h2><h2>2:50 - 3:40</h2></th><th></th>
+          <th  style="background-color:yellow;">  <h2>period9</h2><h2>3:40 - 4:30</h2></th><th></th>
+         
+        </tr>
+      </thead>
+  
+  
+      <tbody>
+  
+        <%if (records.length >0){ %>
+        <% records.forEach(function(row){ %>
+    
+      <br/>
+      <br/>
+       <tr><center>
+          <!-- <td><center><%= row.sem %></center></td><th></th>
+          <td><center><%= row.year %></center></td><th></th>
+          <td><center><%= row.section %></center></td><th></th> -->
+         
+          <td><center><%= row.day %></center></td><th></th>
+          <td><center><%= row.room %></center></td><th></th>
+          <td><center><%= row.period1 %></center></td><th></th>
+          <td><center><%= row.period2 %></center></td><th></th>
+          <td><center><%= row.period3 %></center></td><th></th>
+          <td><center><%= row.period4 %></center></td><th></th>
+          <td><center><%= row.period5 %></center></td><th></th>
+          <td><center><%= row.period6 %></center></td><th></th>
+          <td><center><%= row.period7 %></center></td><th></th>
+          <td><center><%= row.period8 %></center></td><th></th>
+          <td><center><%= row.period9 %></center></td><th></th>
+          <!-- <%if (row.period1=="Free" || row.period2=="Free" || row.period3=="Free" || row.period4=="Free" || row.period5=="Free" || row.period6=="Free" || row.period7=="Free" || row.period8=="Free" || row.period9=="Free"){%>
+            <td style="background-color:green"></td>
+            <%}else{%>
+              <td style="background-color:white"></td> <%} %> -->
+              <!-- <%if (row.period1=="Free"){%>
+             
+                <td style="background-color:green"><center><%= row.period1 %></center></td><th></th> <%}
+              else{%><td><center><%= row.period1 %></center></td><th></th> <%}
+                %>
+                <%if (row.period2=="Free"){%>
+             
+                  <td style="background-color:green"><center><%= row.period2 %></center></td><th></th> <%}
+                else{%><td><center><%= row.period2 %></center></td><th></th> <%}
+                  %>
+                  <%if (row.period3=="Free"){%>
+             
+                    <td style="background-color:green"><center><%= row.period3 %></center></td><th></th> <%}
+                  else{%><td><center><%= row.period3 %></center></td><th></th> <%}
+                    %>
+                    <%if (row.period4=="Free"){%>
+             
+                      <td style="background-color:green"><center><%= row.period4 %></center></td><th></th> <%}
+                    else{%><td><center><%= row.period4 %></center></td><th></th> <%}
+                      %>
+                      <%if (row.period5=="Free"){%>
+             
+                        <td style="background-color:green"><center><%= row.period5 %></center></td><th></th> <%}
+                      else{%><td><center><%= row.period5 %></center></td><th></th> <%}
+                        %>
+                        <%if (row.period6=="Free"){%>
+             
+                          <td style="background-color:green"><center><%= row.period6 %></center></td><th></th> <%}
+                        else{%><td><center><%= row.period6 %></center></td><th></th> <%}
+                          %>
+                          <%if (row.period7=="Free"){%>
+             
+                            <td style="background-color:green"><center><%= row.period7 %></center></td><th></th> <%}
+                          else{%><td><center><%= row.period7 %></center></td><th></th> <%}
+                            %>
+                            <%if (row.period8=="Free"){%>
+             
+                              <td style="background-color:green"><center><%= row.period8 %></center></td><th></th> <%}
+                            else{%><td><center><%= row.period8 %></center></td><th></th> <%}
+                              %>
+                              <%if (row.period9=="Free"){%>
+             
+                                <td style="background-color:green"><center><%= row.period9 %></center></td><th></th> <%}
+                              else{%><td><center><%= row.period9 %></center></td><th></th> <%}
+                                %> -->
+                            
+              
+    <tr></tr>
+        </center>
+        </tr>
+      
+        <% })}else{ %>
+          <tr>
+              <td colspan="10">No Record Found</td>
+              
+            </tr>
+          <% } %>
+        
+    
+      </form>
+      </tbody>
+    </table>
